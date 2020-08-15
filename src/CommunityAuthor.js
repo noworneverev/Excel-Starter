@@ -1,9 +1,9 @@
 import React from 'react';
 
-const CommunityAuthor = ({ name, imageUrl, twitterUrl, githubUrl, description }) => {
+const CommunityAuthor = ({ name, imageUrl, mailUrl, githubUrl, description }) => {
   return (
     <>
-      <h2 className="communitySection">About the community author</h2>
+      <h2 className="communitySection">關於作者</h2>
       <div className="authorSection">
         <div className="authorImg">
           <img src={imageUrl} alt={name} />
@@ -11,12 +11,12 @@ const CommunityAuthor = ({ name, imageUrl, twitterUrl, githubUrl, description })
         <div className="authorDetails">
           <div className="authorName">
             <strong>{name}</strong>
-            {twitterUrl ? (
-              <a href={twitterUrl} target="_blank" rel="noopener noreferrer">
+            {mailUrl ? (
+              <a href={mailUrl} target="_blank" rel="noopener noreferrer">
                 <img
-                  src="https://storage.googleapis.com/graphql-engine-cdn.hasura.io/learn-hasura/assets/social-media/twitter-icon.svg"
-                  alt="Twitter Icon"
-                  aria-label="Twitter"
+                  src="https://image.flaticon.com/icons/svg/561/561127.svg"
+                  alt="Mail Icon"
+                  aria-label="Email"
                 />
               </a>
             ) : null}

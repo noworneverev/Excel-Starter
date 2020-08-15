@@ -3,6 +3,7 @@ import { injectGlobal } from 'emotion';
 export const baseStyles = injectGlobal`
   @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
   @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
   * {
     margin: 0;
     padding: 0;
@@ -26,7 +27,7 @@ export const baseStyles = injectGlobal`
   body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Roboto Light', 'Oxygen',
       'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif,
-      'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+      'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Sans TC', sans-serif;
 
     font-size: 16px;
     scroll-behavior: smooth;
@@ -38,7 +39,7 @@ export const baseStyles = injectGlobal`
   }
 
   body {
-    font-family: 'Roboto';
+    font-family: 'Noto Sans TC', sans-serif;
   }
   .visibleMobile {
     display: none;
@@ -244,7 +245,7 @@ export const baseStyles = injectGlobal`
   }
 
   .logoContent {
-    font-family: 'Roboto';
+    font-family: 'Noto Sans TC', sans-serif;
     margin-left: 16px;
     font-size: 28px;
     line-height: 1.5;
@@ -297,7 +298,7 @@ export const baseStyles = injectGlobal`
     -webkit-overflow-scrolling: touch;
   }
   .navBarUL li a {
-    font-family: 'Roboto';
+    font-family: 'Noto Sans TC', sans-serif;
     color: #fff !important;
     font-size: 16px;
     font-weight: 500;
@@ -396,7 +397,7 @@ export const baseStyles = injectGlobal`
   }
 
   .headerNav {
-    font-family: 'Roboto';
+    font-family: 'Noto Sans TC', sans-serif;
     padding: 0px 24px;
     color: #001933;
     font-size: 16px;
@@ -578,10 +579,10 @@ export const baseStyles = injectGlobal`
     padding: 0;
   }
 
-  table tr:nth-child(2n) {
+  table tr :nth-child(2n) td {
     background-color: #f8f8f8;
   }
-
+  
   table tr th {
     font-weight: bold;
     border: 1px solid #cccccc;

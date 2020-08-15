@@ -4,6 +4,8 @@ const config = require("./config");
 const plugins = [
   'gatsby-plugin-sitemap',
   'gatsby-plugin-sharp',
+  'gatsby-transformer-sharp',
+  `gatsby-plugin-mdx`,
   {
     resolve: `gatsby-plugin-layout`,
     options: {
@@ -17,6 +19,13 @@ const plugins = [
     options: {
       name: "docs",
       path: `${__dirname}/content/`
+    }
+  },
+  {
+    resolve: "gatsby-source-filesystem",
+    options: {
+      name: "images",
+      path: `${__dirname}/src/components/images`
     }
   },
   {

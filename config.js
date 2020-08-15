@@ -1,32 +1,25 @@
 const config = {
   gatsby: {
     pathPrefix: '/',
-    siteUrl: 'https://hasura.io',
+    siteUrl: 'https://hasura.io', //
     gaTrackingId: null,
     trailingSlash: false,
   },
   header: {
-    logo: 'https://graphql-engine-cdn.hasura.io/learn-hasura/assets/homepage/brand.svg',
-    logoLink: 'https://hasura.io/learn/',
-    title:
-      "<a href='https://hasura.io/learn/'><img class='img-responsive' src='https://graphql-engine-cdn.hasura.io/learn-hasura/assets/homepage/learn-logo.svg' alt='Learn logo' /></a>",
-    githubUrl: 'https://github.com/hasura/gatsby-gitbook-boilerplate',
+    logo: 'https://raw.githubusercontent.com/noworneverev/noworneverev.github.io/df0f5c444077b6848f16e9cd04fc1d66c0a03d7a/images/excel30-10.svg',     //https://graphql-engine-cdn.hasura.io/learn-hasura/assets/homepage/brand.svg //https://raw.githubusercontent.com/noworneverev/noworneverev.github.io/c1b09a0adee201e92a9418c2127e5a3fb3d6c80b/images/excel20-20.svg
+    logoLink: '',    ///introduction'
+    title: '',
+      // "<a href='https://hasura.io/learn/'><img class='img-responsive' src='https://graphql-engine-cdn.hasura.io/learn-hasura/assets/homepage/learn-logo.svg' alt='Learn logo' /></a>",
+    githubUrl: 'https://github.com/noworneverev/Excel-Starter',
     helpUrl: '',
     tweetText: '',
     social: `<li>
-		    <a href="https://twitter.com/hasurahq" target="_blank" rel="noopener">
-		      <div class="twitterBtn">
-		        <img src='https://graphql-engine-cdn.hasura.io/learn-hasura/assets/homepage/twitter-brands-block.svg' alt={'Discord'}/>
-		      </div>
-		    </a>
-		  </li>
-			<li>
-		    <a href="https://discordapp.com/invite/hasura" target="_blank" rel="noopener">
-		      <div class="discordBtn">
-		        <img src='https://graphql-engine-cdn.hasura.io/learn-hasura/assets/homepage/discord-brands-block.svg' alt={'Discord'}/>
-		      </div>
-		    </a>
-		  </li>`,
+      <a href="https://www.facebook.com/AccodingTW" target="_blank" rel="noopener">
+        <div class="twitterBtn">
+          <img src='https://upload.wikimedia.org/wikipedia/commons/9/9b/Font_Awesome_5_brands_facebook-square.svg' alt={'Facebook'}/>
+        </div>
+      </a>
+    </li>`,
     links: [{ text: '', link: '' }],
     search: {
       enabled: false,
@@ -37,25 +30,33 @@ const config = {
     },
   },
   sidebar: {
-    forcedNavOrder: [
-      '/introduction', // add trailing slash if enabled above
-      '/codeblock',
+    forcedNavOrder: [      
+      '/intro-to-excel',
+      '/formula',
+      '/tricks',
+      '/pivot-table',
+      '/split-text',
+      '/restore-file',
+      '/custom-shortcut',
+      '/macro',
+      '/side-project',
     ],
-    collapsedNav: [
-      '/codeblock', // add trailing slash if enabled above
-    ],
-    links: [{ text: 'Hasura', link: 'https://hasura.io' }],
+    // collapsedNav: [
+    //   '/chapter1',
+    //   '/codeblock', // add trailing slash if enabled above
+    // ],
+    links: [{ text: 'Github', link: 'https://github.com/noworneverev/Excel-Starter' }, {text:'Facebook', link:'https://www.facebook.com/AccodingTW'}],
     frontline: false,
-    ignoreIndex: true,
-    title:
-      "<a href='https://hasura.io/learn/'>graphql </a><div class='greenCircle'></div><a href='https://hasura.io/learn/graphql/react/introduction/'>react</a>",
+    ignoreIndex: true,    
+    // title:
+    //   "<a href='https://hasura.io/learn/'>graphql </a><div class='greenCircle'></div><a href='https://hasura.io/learn/graphql/react/introduction/'>react</a>",
   },
   siteMetadata: {
-    title: 'Gatsby Gitbook Boilerplate | Hasura',
-    description: 'Documentation built with mdx. Powering hasura.io/learn ',
+    title: 'Excel Tutorial for Accounting Firm Newbie',
+    description: 'Excel Tutorial for Beginners',
     ogImage: null,
-    docsLocation: 'https://github.com/hasura/gatsby-gitbook-boilerplate/tree/master/content',
-    favicon: 'https://graphql-engine-cdn.hasura.io/img/hasura_icon_black.svg',
+    docsLocation: 'https://github.com/noworneverev/Excel-Starter/tree/master/content', //https://github.com/hasura/gatsby-gitbook-boilerplate/tree/master/content
+    favicon: 'https://i.imgur.com/IOMAeE3.jpg', // https://graphql-engine-cdn.hasura.io/img/hasura_icon_black.svg
   },
   pwa: {
     enabled: false, // disabling this will also remove the existing service worker.

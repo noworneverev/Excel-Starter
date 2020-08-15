@@ -47,7 +47,7 @@ export const StyledMainWrapper = styled.div`
     -webkit-padding-start: 40px;
     -moz-padding-start: 40px;
     -o-padding-start: 40px;
-    margin: 24px 0px;
+    margin: 12px 0px;
     padding: 0px 0px 0px 2em;
 
     li {
