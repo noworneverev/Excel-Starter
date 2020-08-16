@@ -15,7 +15,7 @@ const config = {
     tweetText: '',
     social: `<li>
       <a href="https://www.facebook.com/AccodingTW" target="_blank" rel="noopener">
-        <div class="twitterBtn">          
+        <div class="facebookBtn">          
           <img src='https://raw.githubusercontent.com/noworneverev/Excel-Starter/master/src/components/images/facebook.svg' alt={'Facebook'}/>
         </div>
       </a>

@@ -3,7 +3,7 @@ import React from 'react';
 const CommunityAuthor = ({ name, imageUrl, mailUrl, githubUrl, description }) => {
   return (
     <>
-      <h2 className="communitySection">關於作者</h2>
+      {/* <h2 className="communitySection">關於作者</h2> */}
       <div className="authorSection">
         <div className="authorImg">
           <img src={imageUrl} alt={name} />

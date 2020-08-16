@@ -353,13 +353,26 @@ export const baseStyles = injectGlobal`
     opacity: .8;
     cursor: pointer;
   }
+  .facebookBtn {    
+    width: 19px;
+    height: 19px;
+    padding-top: 0px;
+    margin-left: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: .8;
+    cursor: pointer;
+  }
+
   .twitterBtn img {
     width: 12px !important;
   }
   .discordBtn img {
     width: 10px !important;
   }
-  .discordBtn:hover, .twitterBtn:hover {
+  
+  .discordBtn:hover, .twitterBtn:hover, .facebookBtn:hover {
     opacity: 1;
   }
   .discordBtn {
