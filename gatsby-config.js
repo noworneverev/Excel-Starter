@@ -2,6 +2,12 @@ require("dotenv").config();
 const queries = require("./src/utils/algolia");
 const config = require("./config");
 const plugins = [
+  {
+    resolve: `gatsby-plugin-google-adsense`,
+    options: {
+      publisherId: `ca-pub-7039047663749278`
+    },
+  },
   'gatsby-plugin-sitemap',
   'gatsby-plugin-sharp',
   'gatsby-transformer-sharp',

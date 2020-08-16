@@ -1,8 +1,8 @@
 const config = {
   gatsby: {
     pathPrefix: '/',
-    siteUrl: 'https://hasura.io', //
-    gaTrackingId: null,
+    siteUrl: 'https://excel-starter.netlify.app/', //
+    gaTrackingId: 'UA-175514291-1',
     trailingSlash: false,
   },
   header: {
